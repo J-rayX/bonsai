@@ -8,7 +8,7 @@
 
 body {
     font-family:"futura-pt", Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     /* margin: 0; */
     margin-left: auto;
     margin-right: auto;
@@ -317,4 +317,96 @@ body {
         
         column-gap: 40px;
     }
+}
+
+.pricing-area {
+    display: flex;
+    position: relative;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 5%;
+}
+
+.pricing-box {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    /* justify-content: flex-start; */
+    /* justify-items: flex-start; */
+    height: 100%;
+    width: 28vw;
+    /* padding: 1em; */
+    background-color: #fbfcff;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    padding: 6% 10%;
+    border-radius: 4px;
+    border: 0.3px solid rgba(2, 4, 69, .15);
+    box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
+}
+.pricing-box h3 {
+    font-size: 1.5rem;
+}
+.pricing-box p {
+    margin-top: -10px;
+    /* padding-top: -40px; */
+}
+.pricing-box .pricing-row-container {
+    position: relative;
+}
+.pricing-box .pricing-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -50px;
+    
+}
+.pricing-box .pricing-row:after {
+    position: absolute;
+    bottom: 50px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #01b289;
+}
+.pricing-box .pricing-row h4 {
+    font-size: 1.625rem;
+}
+.pricing-box .pricing-row h2 {
+    font-size: 62px;
+}
+
+.pricing-box .pricing-row h4:first-of-type {
+    align-self: start;
+    margin-top: 62px;
+}
+.pricing-box .pricing-row h4:last-of-type {
+    align-self: end;
+    margin-bottom: 62px;
+}
+.pricing-box  ul {
+    position: relative;
+    justify-self: flex-start;
+    font-size: 1.2em;
+    top: -20px;
+    /* margin-left: 0;  */
+    padding-left: 0;
+}
+
+.pricing-box ul li {
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 18px;
+}
+.pricing-box ul li img {
+    padding-right: 12px;
+}
+
+@media screen and (max-width:992px) {
+
 }
