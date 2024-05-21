@@ -180,10 +180,10 @@ body {
 .page-bg-shape {
     position: absolute;
     
-    width: 90vw;
-    height: 1100px;
-    top: -80vh;
-    right: -10vw;
+    width: 98%;
+    height: 90%;
+    top: -70%;
+    right: -10%;
 
     /* left: 0; */
     /* top: 0; */
@@ -196,7 +196,7 @@ body {
     /* background-color: #3e7496; */
     -webkit-transform: rotate(-23deg);
     -ms-transform: rotate(-23deg);
-    transform: rotate(-10deg);
+    transform: rotate(-18deg);
 }
 
 @media screen and (max-width:992px) {
@@ -227,7 +227,7 @@ body {
 
 .hero {
     height: 40vh;
-    background: #e2fff1;
+    /* background: #030e09; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,7 +309,7 @@ body {
 @media screen and (max-width:992px) {
     .hero {
         height: 40vh;
-        background: #e2fff1;
+        /* background: #e2fff1; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -322,11 +322,14 @@ body {
 .pricing-area {
     display: flex;
     position: relative;
+    width: 100%;
+    justify-content: center;
 }
 
 .pricing-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     position: relative;
     padding: 0 5%;
@@ -338,13 +341,14 @@ body {
     align-content: flex-start;
     /* justify-content: flex-start; */
     /* justify-items: flex-start; */
-    height: 100%;
-    width: 28vw;
+    /* height: 100%; */
+    width: 32%;
+    min-width: 300px;
     /* padding: 1em; */
     background-color: #fbfcff;
     /* padding-top: 50px;
     padding-bottom: 50px; */
-    padding: 6% 10%;
+    padding: 6% 4%;
     border-radius: 4px;
     border: 0.3px solid rgba(2, 4, 69, .15);
     box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
@@ -354,6 +358,7 @@ body {
 }
 .pricing-box p {
     margin-top: -10px;
+    font-size: 1.025rem;
     /* padding-top: -40px; */
 }
 .pricing-box .pricing-row-container {
@@ -406,7 +411,32 @@ body {
 .pricing-box ul li img {
     padding-right: 12px;
 }
+.start-button-container {
+    margin-top: auto;
+
+    /* margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0; */
+}
+.pricing-box .start-button {
+    display: inline-block;
+    /* position: relative; */
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    background: #00b289;
+    border-radius: 4px;
+    padding: 22px 25px;
+    /* letter-spacing: 0.7px; */
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 @media screen and (max-width:992px) {
-
+    .pricing-box {
+        width: 100%;
+    }
 }
