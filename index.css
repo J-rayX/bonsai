@@ -305,7 +305,7 @@ body {
 .switch input:checked ~ .slider {
     background-color: #01b289;;
 }
-.switch input:focus + .slider {
+.switch input:focus ~ .slider {
     box-shadow: 0 0 10px #01b289;
 }
 .switch input:checked + .slider:before {
@@ -313,6 +313,20 @@ body {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
+
+.yearly-price{
+    /* display: none; */
+}
+
+/****  **/
+/* .switch input:checked + .yearly-price{
+    display: block;
+} */
+.switch input:checked ~ .pricing-box .pricing-row h2 .monthly-price{
+    display: none;
+}
+
+/****  **/
 
 @media screen and (max-width:992px) {
     .hero {

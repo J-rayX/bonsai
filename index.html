@@ -6,6 +6,7 @@
     <title>Bonsai</title>
     <link rel="stylesheet" href="/index.css">
     <link rel="icon" type="image/png" href="assets/logo-bonsai.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
             </div>
 
             <div class="navigation">
-                <input type="checkbox" class="toggle-menu" name="" id="" title="hamburger">
+                <input type="checkbox" class="toggle-menu" name="" title="hamburger">
                 <div class="hamburger"></div>
 
                 <ul class="menu">
@@ -37,118 +38,222 @@
     <div class="main">
         <div class="page-container">
             <div class="page-bg-shape"></div>
+        </div>
+        <div class="hero">
 
-            <div class="hero">
+            <h1>Plan & Pricing</h1>
+            <div class="switch-panel">
+                <h3>MONTHLY</h3>
+            <label class="switch">
+                <input type="checkbox" 
+                id="pricing-switch" >
+                <span class="slider"></span>
+            </label>
+            
+            
 
-                <h1>Plan & Pricing</h1>
-                <div class="switch-panel">
-                    <h3>MONTHLY</h3>
-                <label class="switch">
-                    <input type="checkbox" >
-                    <span class="slider"></span>
-                </label>
-                
-                
-
-                <h3>YEARLY</h3>
-                
-                <img src="assets/FREE-text.svg" alt="">
-                </div>
-                
+            <h3>YEARLY</h3>
+            
+            <img src="assets/FREE-text.svg" alt="">
             </div>
+            
+        </div>
 
-            <div class="pricing-area">
-                <div class="pricing-container">
-                    <div class="pricing-box">
-                        <h3>Starter</h3>
-                        <p>Ideal for freelance and contractors just starting out.</p>
-                        <div class="pricing-row-container">
-                            <div class="pricing-row">
-                                <h4>$</h4>
-                                <h2>24</h2>
-                                <h4>/MONTH</h4>
-                            </div>
+        <div class="pricing-area monthly">
+            <div class="pricing-container">
+                <div class="pricing-box">
+                    <h3>Starter</h3>
+                    <p>Ideal for freelance and contractors just starting out.</p>
+                    <div class="pricing-row-container">
+                        <div class="pricing-row">
+                            <h4>$</h4>
+                            <h2 class="monthly-price">24</h2>
+                            <h4>/MONTH</h4>
                         </div>
-
-                        <ul>
-                           <li><img src="assets/green-tick.svg" alt="">All Templates</li>
-                           <li><img src="assets/green-tick.svg" alt="">Unlimited Clients & Projects</li>
-                           <li><img src="assets/green-tick.svg" alt="">Invoicing & Payments</li>
-                           <li><img src="assets/green-tick.svg" alt="">Proposals & Contracts</li>
-                           <li><img src="assets/green-tick.svg" alt="">Tasks & Time Tracking</li>
-                           <li><img src="assets/green-tick.svg" alt="">Client CRM</li>
-                           <li><img src="assets/green-tick.svg" alt="">Expense Tracking</li>
-                           <li><img src="assets/green-tick.svg" alt="">Up to 5 Project Collaborators</li>
-                        </ul>
-
-                        <div class="start-button-container">
-                            <a href="#" class="start-button">START FREE</a>
-                        </div>
-
                     </div>
 
-                    <div class="pricing-box">
-                        <h3>Starter</h3>
-                        <p>Ideal for freelance and contractors just starting out.</p>
-                        <div class="pricing-row-container">
-                            <div class="pricing-row">
-                                <h4>$</h4>
-                                <h2>39</h2>
-                                <h4>/MONTH</h4>
-                            </div>
-                        </div>
+                    <ul>
+                       <li><img src="assets/green-tick.svg" alt="">All Templates</li>
+                       <li><img src="assets/green-tick.svg" alt="">Unlimited Clients & Projects</li>
+                       <li><img src="assets/green-tick.svg" alt="">Invoicing & Payments</li>
+                       <li><img src="assets/green-tick.svg" alt="">Proposals & Contracts</li>
+                       <li><img src="assets/green-tick.svg" alt="">Tasks & Time Tracking</li>
+                       <li><img src="assets/green-tick.svg" alt="">Client CRM</li>
+                       <li><img src="assets/green-tick.svg" alt="">Expense Tracking</li>
+                       <li><img src="assets/green-tick.svg" alt="">Up to 5 Project Collaborators</li>
+                    </ul>
 
-                        <ul>
-                           <li><img src="assets/green-tick.svg" alt="">Everything in Starter plus...</li>
-                           <li><img src="assets/green-tick.svg" alt="">Custom Branding</li>
-                           <li><img src="assets/green-tick.svg" alt="">Forms & Questionnaires</li>
-                           <li><img src="assets/green-tick.svg" alt="">Workflow Automations</li>
-                           <li><img src="assets/green-tick.svg" alt="">Client Portal</li>
-                           <li><img src="assets/green-tick.svg" alt="">QuickBooks Integration</li>
-                           <li><img src="assets/green-tick.svg" alt="">Calendly Integration</li>
-                           <li><img src="assets/green-tick.svg" alt="">Zapier Integration</li>
-                           <li><img src="assets/green-tick.svg" alt="">Up to 15 Project Collaborators</li>
-                        </ul>
-
-                        <div class="start-button-container">
-                            <a href="#" class="start-button">START FREE</a>
-                        </div>
-
+                    <div class="start-button-container">
+                        <a href="#" class="start-button">START FREE</a>
                     </div>
 
-                    <div class="pricing-box">
-                        <h3>Starter</h3>
-                        <p>Ideal for freelance and contractors just starting out.</p>
-                        <div class="pricing-row-container">
-                            <div class="pricing-row">
-                                <h4>$</h4>
-                                <h2>79</h2>
-                                <h4>/MONTH</h4>
-                            </div>
+                </div>
+
+                <div class="pricing-box">
+                    <h3>Starter</h3>
+                    <p>Ideal for freelance and contractors just starting out.</p>
+                    <div class="pricing-row-container">
+                        <div class="pricing-row">
+                            <h4>$</h4>
+                            <h2 class="monthly-price">39</h2>
+                            <h4>/MONTH</h4>
                         </div>
-
-                        <ul>
-                           <li><img src="assets/green-tick.svg" alt="">Everything in Starter and Professional plus...</li>
-                           <li><img src="assets/green-tick.svg" alt="">Subcontractor Management</li>
-                           <li><img src="assets/green-tick.svg" alt="">Hiring Agreement Templates (1099 contracts)</li>
-                           <li><img src="assets/green-tick.svg" alt="">Subcontractor Onboarding</li>
-                           <li><img src="assets/green-tick.svg" alt="">Talent Pool</li>
-                           <li><img src="assets/green-tick.svg" alt="">3 Team Seats (additional seats $9/month)</li>
-                           <li><img src="assets/green-tick.svg" alt="">Accountant Access</li>
-                           <li><img src="assets/green-tick.svg" alt="">Connect Multiple Bank Accounts</li>
-                           <li><img src="assets/green-tick.svg" alt="">Unlimited Subcontractors</li>
-                           <li><img src="assets/green-tick.svg" alt="">Unlimited Project Collaborators</li>
-                        </ul>
-
-                        <div class="start-button-container">
-                            <a href="#" class="start-button">START FREE</a>
-                        </div>
-
                     </div>
+
+                    <ul>
+                       <li><img src="assets/green-tick.svg" alt="">Everything in Starter plus...</li>
+                       <li><img src="assets/green-tick.svg" alt="">Custom Branding</li>
+                       <li><img src="assets/green-tick.svg" alt="">Forms & Questionnaires</li>
+                       <li><img src="assets/green-tick.svg" alt="">Workflow Automations</li>
+                       <li><img src="assets/green-tick.svg" alt="">Client Portal</li>
+                       <li><img src="assets/green-tick.svg" alt="">QuickBooks Integration</li>
+                       <li><img src="assets/green-tick.svg" alt="">Calendly Integration</li>
+                       <li><img src="assets/green-tick.svg" alt="">Zapier Integration</li>
+                       <li><img src="assets/green-tick.svg" alt="">Up to 15 Project Collaborators</li>
+                    </ul>
+
+                    <div class="start-button-container">
+                        <a href="#" class="start-button">START FREE</a>
+                    </div>
+
+                </div>
+
+                <div class="pricing-box">
+                    <h3>Starter</h3>
+                    <p>Ideal for freelance and contractors just starting out.</p>
+                    <div class="pricing-row-container">
+                        <div class="pricing-row">
+                            <h4>$</h4>
+                            <h2 class="monthly-price">79</h2>
+                            <h4>/MONTH</h4>
+                        </div>
+                    </div>
+
+                    <ul>
+                       <li><img src="assets/green-tick.svg" alt="">Everything in Starter and Professional plus...</li>
+                       <li><img src="assets/green-tick.svg" alt="">Subcontractor Management</li>
+                       <li><img src="assets/green-tick.svg" alt="">Hiring Agreement Templates (1099 contracts)</li>
+                       <li><img src="assets/green-tick.svg" alt="">Subcontractor Onboarding</li>
+                       <li><img src="assets/green-tick.svg" alt="">Talent Pool</li>
+                       <li><img src="assets/green-tick.svg" alt="">3 Team Seats (additional seats $9/month)</li>
+                       <li><img src="assets/green-tick.svg" alt="">Accountant Access</li>
+                       <li><img src="assets/green-tick.svg" alt="">Connect Multiple Bank Accounts</li>
+                       <li><img src="assets/green-tick.svg" alt="">Unlimited Subcontractors</li>
+                       <li><img src="assets/green-tick.svg" alt="">Unlimited Project Collaborators</li>
+                    </ul>
+
+                    <div class="start-button-container">
+                        <a href="#" class="start-button">START FREE</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-area yearly">
+            <div class="pricing-container">
+                <div class="pricing-box">
+                    <h3>Starter</h3>
+                    <p>Ideal for freelance and contractors just starting out.</p>
+                    <div class="pricing-row-container">
+                        <div class="pricing-row">
+                            <h4>$</h4>
+                            <h2 class="yearly-price">17</h2>
+                            <h4>/MONTH</h4>
+                        </div>
+                    </div>
+
+                    <ul>
+                       <li><img src="assets/green-tick.svg" alt="">All Templates</li>
+                       <li><img src="assets/green-tick.svg" alt="">Unlimited Clients & Projects</li>
+                       <li><img src="assets/green-tick.svg" alt="">Invoicing & Payments</li>
+                       <li><img src="assets/green-tick.svg" alt="">Proposals & Contracts</li>
+                       <li><img src="assets/green-tick.svg" alt="">Tasks & Time Tracking</li>
+                       <li><img src="assets/green-tick.svg" alt="">Client CRM</li>
+                       <li><img src="assets/green-tick.svg" alt="">Expense Tracking</li>
+                       <li><img src="assets/green-tick.svg" alt="">Up to 5 Project Collaborators</li>
+                    </ul>
+
+                    <div class="start-button-container">
+                        <a href="#" class="start-button">START FREE</a>
+                    </div>
+
+                </div>
+
+                <div class="pricing-box">
+                    <h3>Starter</h3>
+                    <p>Ideal for freelance and contractors just starting out.</p>
+                    <div class="pricing-row-container">
+                        <div class="pricing-row">
+                            <h4>$</h4>
+                            <h2 class="yearly-price">32</h2>
+                            <h4>/MONTH</h4>
+                        </div>
+                    </div>
+
+                    <ul>
+                       <li><img src="assets/green-tick.svg" alt="">Everything in Starter plus...</li>
+                       <li><img src="assets/green-tick.svg" alt="">Custom Branding</li>
+                       <li><img src="assets/green-tick.svg" alt="">Forms & Questionnaires</li>
+                       <li><img src="assets/green-tick.svg" alt="">Workflow Automations</li>
+                       <li><img src="assets/green-tick.svg" alt="">Client Portal</li>
+                       <li><img src="assets/green-tick.svg" alt="">QuickBooks Integration</li>
+                       <li><img src="assets/green-tick.svg" alt="">Calendly Integration</li>
+                       <li><img src="assets/green-tick.svg" alt="">Zapier Integration</li>
+                       <li><img src="assets/green-tick.svg" alt="">Up to 15 Project Collaborators</li>
+                    </ul>
+
+                    <div class="start-button-container">
+                        <a href="#" class="start-button">START FREE</a>
+                    </div>
+
+                </div>
+
+                <div class="pricing-box">
+                    <h3>Starter</h3>
+                    <p>Ideal for freelance and contractors just starting out.</p>
+                    <div class="pricing-row-container">
+                        <div class="pricing-row">
+                            <h4>$</h4>
+                            <h2 class="yearly-price">52</h2>
+                            <h4>/MONTH</h4>
+                        </div>
+                    </div>
+
+                    <ul>
+                       <li><img src="assets/green-tick.svg" alt="">Everything in Starter and Professional plus...</li>
+                       <li><img src="assets/green-tick.svg" alt="">Subcontractor Management</li>
+                       <li><img src="assets/green-tick.svg" alt="">Hiring Agreement Templates (1099 contracts)</li>
+                       <li><img src="assets/green-tick.svg" alt="">Subcontractor Onboarding</li>
+                       <li><img src="assets/green-tick.svg" alt="">Talent Pool</li>
+                       <li><img src="assets/green-tick.svg" alt="">3 Team Seats (additional seats $9/month)</li>
+                       <li><img src="assets/green-tick.svg" alt="">Accountant Access</li>
+                       <li><img src="assets/green-tick.svg" alt="">Connect Multiple Bank Accounts</li>
+                       <li><img src="assets/green-tick.svg" alt="">Unlimited Subcontractors</li>
+                       <li><img src="assets/green-tick.svg" alt="">Unlimited Project Collaborators</li>
+                    </ul>
+
+                    <div class="start-button-container">
+                        <a href="#" class="start-button">START FREE</a>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
     <section></section>
+
+    <script>
+        $("#pricing-switch").change(function(){
+            if($(this).is(":checked")){
+                $(".yearly").show();
+                $(".monthly").hide();
+            } else {
+                $(".yearly").hide();
+                $(".monthly").show();
+            }
+        })
+    </script>    
 </body>
+
 </html>
