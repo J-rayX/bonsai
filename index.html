@@ -244,13 +244,20 @@
     <section></section>
 
     <script>
+        $(document).ready(function(){
+            $(".yearly").hide();
+        });
         $("#pricing-switch").change(function(){
+
             if($(this).is(":checked")){
-                $(".yearly").show();
+                
                 $(".monthly").hide();
+                $(".yearly").show();
             } else {
-                $(".yearly").hide();
+
                 $(".monthly").show();
+                $(".yearly").hide();
+               
             }
         })
     </script>    
