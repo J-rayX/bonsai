@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fafffc;
+    background: #fafbff;
     padding: 10px 25px;
     transition: 0.3s;
     
@@ -65,12 +65,12 @@ body {
     list-style-type: none;
 }
 .menu li a{
-    color: #007844;
+    color: #2b2b2b;
     text-decoration: none;
     display: block;
     padding: 12px 15px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 450;
     line-height: 1;
     transition: 0.3s;
 }
