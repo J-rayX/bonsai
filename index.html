@@ -295,9 +295,69 @@
                 <a href="#">START FREE</a>
             </div>
         </div>
+
+        <div class="faq-container">
+            <div class="collapsible">
+                <input type="checkbox" name="" id="toggle" />
+                <label for="toggle" class="question">How does the free trial work?</label>
+                <div class="answer">
+                    <span>
+                        When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any time during the trial period, you can do so through your Subscriptions Settings Page.
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
     <section></section>
 
+    <style>
+        #toggle {
+            display: none;
+        }
+        .question {
+            display: block;
+            width: 100%;
+            height: fit-content;
+            box-sizing: border-box;
+            padding: 10px;
+            /* border: 0.4mm solid black; */
+            position: relative;
+            cursor: pointer;
+        }
+        .question::before {
+            position: absolute;
+            content: "expand_more";
+            font-family: "Material Icons";
+            top: 50%;
+            right: 10px;
+            transform: translate(0, -50%);
+            font-size: 26px;
+
+        }
+        .answer {
+            width: 100%;
+            background: linear-gradient(to right, rgb(209, 255, 141), rgb(186, 249, 94));
+            margin: auto;
+            border: 0.4mm solid black;
+            border-top: none;
+            overflow: hidden;
+            max-height: 200px;
+            transition: 0.35s ease-out;
+        }
+        .answer span {
+            display: block;
+            padding: 15px;
+            text-align: justify;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px;
+            font-size: 14px;
+        }
+        #toggle:not(:checked) ~ .answer {
+            max-height: 0px;
+            visibility: hidden;
+        }
+    </style>
     <script>
         $(document).ready(function(){
             $(".yearly").hide();
