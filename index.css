@@ -478,6 +478,11 @@ body {
     .pricing-container {
         padding: 1rem;
     }
+    .pricing-box .pricing-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -50px;
 }
 
 
@@ -558,6 +563,9 @@ body {
         padding: 1rem;
         width: 100%;
     }
+    .addon .text {
+        width: 81%;
+    }
     .addon .side span{
         font-size: 1.7rem;
         font-weight: 600;
@@ -626,16 +634,21 @@ body {
 
     }
     .grow-container .left-grow {
-        /* justify-items: center; */
+        /* justify-content: center; */
         align-items: center;
-        width: 75%;
+        width: 70%;
+        font-size: 2rem;
     }
-    .left-grow p {
-       
+    
+    .grow-container .left-grow p {
+       text-align: center;
+    }
+    .grow-container .right-grow {
+        margin-left: 1rem;
     }
     .grow-container .right-grow a{
-        padding: 0.8rem 1.4rem;
-        font-size: 0.8rem;
+        padding: 0.8rem 1.1rem;
+        font-size: 0.7rem;
     }
 }
 
