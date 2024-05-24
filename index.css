@@ -645,9 +645,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 10vh;
+    margin: 10vh auto;
+    /* margin-top: 10vh; */
+    
 }
+@media screen and (max-width:992px) {
+    .faq-container{ 
+        padding: 0 1rem;
+    }
+}
+   
 .faq-container h3 {
     color: #00b289;
     font-size: 1.7rem;
@@ -697,9 +704,9 @@ body {
 }
 .answer {
     width: 100%;
-    background: linear-gradient(to right, rgb(209, 255, 141), rgb(186, 249, 94));
+    background: linear-gradient(to right, #f2faff, #f2faff);
     margin: auto;
-    border: 0.4mm solid black;
+    /* border: 0.4mm solid black; */
     border-top: none;
     overflow: hidden;
     max-height: 200px;
